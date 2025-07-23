@@ -1,0 +1,98 @@
+body{
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    min-height: 100vh; 
+    font-family: sans-serif;
+ 
+}
+h1{
+    text-align: center;
+    color: #2c3e50;
+}
+.calculator-container {
+    max-width: 400px;   
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 50px auto ;
+    
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+#display {
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn-custom {
+    font-size: 1.3rem;
+    padding: 15px;
+    border-width: 2px;
+}
+
+.btn-number {
+    border-color: #17a2b8;
+    color: #17a2b8;
+}
+
+.btn-number:hover {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.btn-operator {
+    border-color: #fd7e14;
+    color: #fd7e14;
+}
+
+.btn-operator:hover {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+.btn-equal {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.btn-equal:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-clear {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-clear:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+    

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="mt-5 fw-bold">CALCULATOR</h1>
+
+    <div class="calculator-container shadow">
+      <input
+        type="text"
+        id="display"
+        class="form-control p-3 shadow"
+        disabled
+      />
+
+      <div class="buttons mt-4">
+        <button class="btn btn-outline-danger btn-custom btn-clear" onclick="clearDisplay()">C</button>
+        <button class="btn btn-outline-warning btn-custom btn-operator" onclick="appendOperation('/')">
+          /
+        </button>
+        <button class="btn btn-outline-warning btn-custom btn-operator" onclick="appendOperation('*')">
+          *
+        </button>
+        <button class="btn btn-outline-warning btn-custom btn-operator" onclick="appendOperation('+')">
+          +
+        </button>
+
+        <button class="btn btn-outline-warning btn-custom btn-operator " onclick="appendOperation('-')">
+          -
+        </button>
+        <button class="btn btn-outline-success btn-custom btn-equal"onclick="calculate()">=</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('9')">9</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('8')">8</button>
+
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('7')">7</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('6')">6</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('5')">5</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('4')">4</button>
+
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('3')">3</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('2')">2</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('1')">1</button>
+        <button class="btn btn-outline-info btn-custom btn-number" onclick="newNumber('0')">0</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
